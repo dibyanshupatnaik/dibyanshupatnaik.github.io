@@ -21,7 +21,19 @@
   }
   </script>
 
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNDXZhJrbJGmzFo0A9vSyy0KLorcuiEeo&callback=myMap"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3shrFOVoad5YQ7rbFDQkWtmNuSjwg9M0&callback=myMap"></script>
+
+  <input type="text" name="term" placeholder="Enter Place Name.." id = "search">
+
+  <script>
+      function activatePlacesSearch()
+      {
+        var input= document.getElementById('search');
+        var autocomplete= new google.maps.places.Autocomplete(input);
+      }
+  </script>
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3shrFOVoad5YQ7rbFDQkWtmNuSjwg9M0&libraries=places&callback=activatePlacesSearch"></script>
 
  </body>
 </html>
